@@ -1,5 +1,10 @@
-import io
+import io, os, os.path
 import urllib.request
+
+def file_rm(filename):
+    if(os.path.exists(filename)):
+        os.remove(filename)
+
 
 # 初始化文件名
 file_name = input('请输入要生成的文件名：\n')
@@ -49,9 +54,15 @@ for line in file_clean_read:
         pass
     elif '@' in line:
         pass
+    elif '回复日期：' in line:
+        pass
     else:
         print(line,'\n')
         file_final_process.write(line)
         file_final_process.write('\n')
 file_clean_read.close()
 file_final_process.close()
+
+#删除临时文件，remove temp files
+file_rm(file_html)
+file_rm(file_clean)
