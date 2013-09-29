@@ -54,7 +54,7 @@ for line in file_clean_read:
         pass
     elif '@' in line:
         pass
-    elif '回复日期：' in line:
+    elif u'回复日期：' in line:
         pass
     else:
         print(line,'\n')
