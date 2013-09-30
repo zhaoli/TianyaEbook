@@ -50,9 +50,11 @@ for line in file_clean_read:
         end = line.find('>')
         line = line[:start]+line[(end+1):]
         line = line.strip()
-    if len(line) < 140:
+    if len(line) < 250:
         pass
     elif '@' in line:
+        pass
+    elif u'&#' in line:
         pass
     elif u'回复日期：' in line:
         pass
