@@ -1,6 +1,6 @@
 TianyaEbook
 ===========
 
-a Python app to download and convert posts from Tianya bbs.
+a Python3 app to download and convert posts from Tianya bbs.
 
-need Python 3.
+Some posts are really longer than the Yellow River, so you'd better split these into 50 pages pieces.
